@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Brasfoot
+Comment=The best football manager game ever
+Comment[pt_BR]=O melhor jogo de manager de futebol
+Comment[es]=El mejor juego de gestión de fútbol
+Exec=/usr/bin/brasfoot
+Icon=/usr/share/brasfoot/img/brasfoot.png
+Terminal=false
+Type=Application
+Categories=Game;

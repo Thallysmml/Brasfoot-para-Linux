@@ -1,0 +1,16 @@
+#!/bin/bash
+
+USER_DIR="$HOME/.local/share/brasfoot"
+SYSTEM_DIR="/usr/share/brasfoot"
+
+if [ ! -d "$USER_DIR" ]; then
+    mkdir -p "$USER_DIR"
+    ln -s "$SYSTEM_DIR"/* "$USER_DIR/" 2>/dev/null
+fi
+
+cd "$USER_DIR"
+
+exec java --add-opens java.desktop/sun.java2d=ALL-UNNAMED \
+          --add-opens java.desktop/sun.awt=ALL-UNNAMED \
+          --add-exports java.desktop/sun.java2d=ALL-UNNAMED \
+          -jar "bf22-23.exe" "$@"

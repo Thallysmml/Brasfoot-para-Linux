@@ -1,0 +1,9 @@
+Package: brasfoot
+Version: 22.23
+Section: games
+Priority: optional
+Architecture: all
+Depends: openjdk-17-jre | openjdk-11-jre
+Maintainer: Thallys <thallysmml3@gmail.com>
+Description: Brasfoot 22-23 manually packed.
+ It will run natively, as this version of the game is made in java.
